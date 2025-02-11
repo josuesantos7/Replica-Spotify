@@ -7,7 +7,7 @@ const Header = () => {
         <div className="header">
         <img src={logoSpotify} alt="Logo do Spotify"></img>
 
-        <a href="#" className="header_link">
+        <a href="#" className="header__link">
             <h1>Spotify</h1>
         </a>
 
