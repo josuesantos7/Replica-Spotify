@@ -15,12 +15,17 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+  }
+
 #root {
     height: 100svh;
     display: flex;
     flex-direction: column;
 }
 
+/* Header */
 .header {
     display: flex;
     padding: 10px 20px;
@@ -32,6 +37,7 @@ a {
     text-decoration: underline;
 }
 
+/* Main */
 .main {
     background-color: aquamarine;
     margin: 0 10px 10px;
@@ -41,13 +47,17 @@ a {
     background-image: linear-gradient(to bottom, #062d14, #000000);
 }
 
-.main__texts {
+/* Item-list */
+.item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-list__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
+    line-height: 130%;
 }
 
-.main__link:hover {
-    text-decoration: underline;
-}
