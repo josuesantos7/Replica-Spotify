@@ -2,16 +2,16 @@ import React from 'react'
 import SingleItem from "./SingleItem"
 
 
-const ItemList = ({ title, items }) => {
+const ItemList = ({ title, items, itemsArray, path }) => {
   return (
     <div className="item-list">
         <div className="item-list__header">
             <h2>{ title } Populares</h2>
-            <a className="item-list__link" href="/">Mostrar tudo</a>
+            <a className="item-list__link" href={path}>Mostrar tudo</a>
         </div>
     
         <div className="item-list__container">
-          {Array(items).fill().map((currentValue, index) => <SingleItem key={`${title}-${index}`}/>)}
+          {itemsArray.filter((currentValue, index) => index < items).map((currentObj, index) => <SingleItem {...currentObj} key={`${title}-${index}`}/>)}
         </div>
     </div>
   )
