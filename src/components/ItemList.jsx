@@ -2,7 +2,7 @@ import React from 'react'
 import SingleItem from "./SingleItem"
 
 
-const ItemList = ({ title, items, itemsArray, path }) => {
+const ItemList = ({ title, items, itemsArray, path, idPath }) => {
   return (
     <div className="item-list">
         <div className="item-list__header">
@@ -11,7 +11,7 @@ const ItemList = ({ title, items, itemsArray, path }) => {
         </div>
     
         <div className="item-list__container">
-          {itemsArray.filter((currentValue, index) => index < items).map((currentObj, index) => <SingleItem {...currentObj} key={`${title}-${index}`}/>)}
+          {itemsArray.filter((currentValue, index) => index < items).map((currentObj, index) => <SingleItem idPath={idPath} {...currentObj} key={`${title}-${index}`}/>)}
         </div>
     </div>
   )
