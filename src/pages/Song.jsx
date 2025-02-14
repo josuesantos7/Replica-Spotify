@@ -1,29 +1,40 @@
 import React from 'react'
 import Player from '../components/Player'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
+import { songsArray } from '../assets/database/songs'
+import { artistArray } from '../assets/database/artists'
 
 const Song = () => {
+  const { id } = useParams();
+
+  const songObj = songsArray.filter(
+      (currentSongObj) => currentSongObj.id === Number(id)
+    )[0];
+
+  const artistObj = artistArray.filter(
+      (currentArtistObj) => currentArtistObj.name === songObj.artist)[0];
+
   return (
     <div className="song">
       <div className="song__container">
           <div className="song__image-container">
-            <img src="https://i.scdn.co/image/ab67616d00001e022774b00531d558bc19e12a24" alt="Imagem da música x" />
+            <img src={songObj.image} alt={`Imagem da música ${songObj.name}`} />
           </div>
       </div>
 
       <div className="song__bar">
-        <Link to="/artist/1" className='song__artist-image'>
+        <Link to={`/artist/${artistObj.id}`} className='song__artist-image'>
           <img 
           width={75}
           height={75}
-          src="https://i.scdn.co/image/ab676161000051744dcd8a3bff84cd7703892cf4" alt="imagem do artista Y" />
+          src={artistObj.image} alt="imagem do artista Y" />
         </Link>
         
-        <Player/>
+        <Player duration={songObj.duration}/>
 
         <div className='song__name'>
-          <p>Última Saudade - Ao Vivo</p>
-          <p>Henrique & Juliano</p>
+          <p>{songObj.name}</p>
+          <p>{artistObj.name}</p>
         </div>
       </div>
 
