@@ -40,7 +40,7 @@ const Song = () => {
           src={artistObj.image} alt="imagem do artista Y" />
         </Link>
         
-        <Player duration={songObj.duration} randomIdFromArtist={randomIdFromArtist} randomIdFromArtist2={randomIdFromArtist2}/>
+        <Player duration={songObj.duration} randomIdFromArtist={randomIdFromArtist} randomIdFromArtist2={randomIdFromArtist2} audio={songObj.audio}/>
 
         <div className='song__name'>
           <p>{songObj.name}</p>
