@@ -3,7 +3,7 @@ Este é um projeto Full-Stack que tem como objetivo a criação de uma aplicaç�
 
 ## <img src="https://cdn-icons-png.flaticon.com/128/3388/3388815.png" width="20px"> Homepage
 Imagem da aplicação rodando em conjunto com o Back-End: <br/>
-![image](./src/assets/images/HomeSpotify.png)
+![image](./front-end/src/assets/images/HomeSpotify.png)
 
 ## <img src="https://cdn-icons-png.flaticon.com/128/9020/9020651.png" width="20px"> Funcionalidades
 
@@ -39,16 +39,16 @@ Para obter mais informações sobre cada componente do projeto e o passo a pas
 
 ## 📸 Screenshots
 **Homepage**
-![Homepage](./src/assets/images/HomeSpotify.png) 
+![Homepage](./front-end/src/assets/images/HomeSpotify.png) 
 
 **Página Artistas**
-![Página Artistas](./src/assets/images/pagina-artistas.png)
+![Página Artistas](./front-end/src/assets/images/pagina-artistas.png)
 
 **Página Músicas**
-![Página Músicas](./src/assets/images/pagina-musicas.png)
+![Página Músicas](./front-end/src/assets/images/pagina-musicas.png)
 
 **Página Artista selecionado**
-![Página Artista selecionado](./src/assets/images/pagina-artista-especifico.png)
+![Página Artista selecionado](./front-end/src/assets/images/pagina-artista-especifico.png)
 
 **Página Player Música**
-![Página Player Música](./src/assets/images/tela-musica.png)
+![Página Player Música](./front-end/src/assets/images/tela-musica.png)
