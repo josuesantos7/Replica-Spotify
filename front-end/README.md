@@ -44,8 +44,17 @@ git clone <https://github.com/josuesantos7/Replica-Spotify.git>
 O servidor inciará na porta:5173 - acesse http://localhost:5173/
 
 ## Screenshots
-![Homepage](./src/assets/images/HomeSpotify.png)
+**Homepage**
+![Homepage](./src/assets/images/HomeSpotify.png) 
+
+**Página Artistas**
 ![Página Artistas](./src/assets/images/pagina-artistas.png)
+
+**Página Músicas**
 ![Página Músicas](./src/assets/images/pagina-musicas.png)
+
+**Página Artista selecionado**
 ![Página Artista selecionado](./src/assets/images/pagina-artista-especifico.png)
+
+**Página Player Música**
 ![Página Player Música](./src/assets/images/tela-musica.png)
